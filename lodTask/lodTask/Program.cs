@@ -17,7 +17,6 @@ namespace ConsoleApp3
             string ingredients = Console.ReadLine().Replace(" ", ",");
             int recipe = 0;
             int minIngr = 0;
-            int a = 0;
             string title = "";
             string href = "";
             string ingredient = "";
@@ -39,7 +38,6 @@ namespace ConsoleApp3
                         if (recipe == 0)
                         {
                             minIngr = ingrLength;
-                            a = recipe;
                             title = item.title;
                             href = item.href;
                             ingredient = item.ingredients;
@@ -49,7 +47,6 @@ namespace ConsoleApp3
                             if (ingrLength < minIngr)
                             {
                                 minIngr = ingrLength;
-                                a = recipe;
                                 title = item.title;
                                 href = item.href;
                                 ingredient = item.ingredients;
